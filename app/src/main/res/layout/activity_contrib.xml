@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/elib4"
+    tools:context="com.niraj.learn.Contrib">
+
+
+
+    <EditText
+        android:id="@+id/bookname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Book Name"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textColorHint="@android:color/darker_gray"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="77dp" />
+    <EditText
+        android:id="@+id/subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="subject"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textColorHint="@android:color/darker_gray"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <EditText
+        android:id="@+id/author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Book Author"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textColorHint="@android:color/darker_gray" />
+
+    <EditText
+        android:id="@+id/publisher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Book Publisher"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textColorHint="@android:color/darker_gray" />
+
+    <EditText
+        android:id="@+id/edition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Book Edition"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textColorHint="@android:color/darker_gray" />
+
+    <EditText
+        android:id="@+id/link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="web"
+        android:ems="10"
+        android:inputType="textUri"
+        android:hint="Link"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textColorHint="@android:color/darker_gray" />
+
+    <Button
+        android:id="@+id/add_book"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:onClick="add_book"
+        android:text="Add Book"
+        android:textColor="@color/colorPrimaryDark" />
+
+
+
+
+
+
+    </LinearLayout>

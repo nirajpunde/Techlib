@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.niraj.learn.list_of_sub">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintVertical_bias="0.92">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/item1btn"
+                android:layout_width="match_parent"
+                android:layout_height="158dp"
+                android:background="@drawable/networks_2"
+                android:onClick="networks"
+                android:text="NETWORKS"
+                android:textColor="#ffffff"
+                android:textSize="27sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/item3btn"
+                android:layout_width="match_parent"
+                android:layout_height="158dp"
+                android:background="@drawable/sepm"
+                android:onClick="softengg"
+                android:text="SOFTWARE ENGINEERING"
+                android:textColor="#ffffff"
+                android:textSize="27sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/item2btn"
+                android:layout_width="match_parent"
+                android:layout_height="158dp"
+                android:background="@drawable/isee_3"
+                android:onClick="isee"
+                android:text="Information System and Engineering Economics"
+                android:textColor="#ffffff"
+                android:textSize="27sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/item4btn"
+                android:layout_width="match_parent"
+                android:layout_height="158dp"
+                android:background="@drawable/dbms3"
+                android:onClick="dbms"
+                android:text="Database Management System"
+                android:textColor="#ffffff"
+                android:textSize="27sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/item5btn"
+                android:layout_width="match_parent"
+                android:layout_height="158dp"
+                android:background="@drawable/toc2"
+                android:onClick="toc"
+                android:text="THEORY OF COMPUTATION"
+                android:textColor="#ffffff"
+                android:textSize="27sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
