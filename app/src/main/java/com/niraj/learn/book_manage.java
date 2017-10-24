@@ -70,7 +70,7 @@ public class book_manage extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(),success+" ",Toast.LENGTH_LONG).show();
                     if (success) {
                         Toast.makeText(getApplicationContext(),"book deleted sucessfully",Toast.LENGTH_SHORT).show();
-                        Intent i=new Intent(getApplicationContext(),user_contri.class);
+                        Intent i=new Intent(getApplicationContext(),user_area.class);
                         i.putExtra("username",username);
                         startActivity(i);
 
