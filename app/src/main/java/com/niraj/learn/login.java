@@ -38,9 +38,9 @@ public class login extends AppCompatActivity {
                 try {
                     //Toast.makeText(getApplicationContext(),response,Toast.LENGTH_SHORT).show();
                     JSONArray jsonResponse = new JSONArray(response);
-                    Toast.makeText(getApplicationContext(),response,Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(getApplicationContext(),response,Toast.LENGTH_SHORT).show();
                     int success = jsonResponse.getJSONObject(0).getInt("uid");
-                    Toast.makeText(getApplicationContext(),success+" ",Toast.LENGTH_LONG).show();
+                    //Toast.makeText(getApplicationContext(),success+" ",Toast.LENGTH_LONG).show();
                     if (success!=0) {
                         //Toast.makeText(getApplicationContext(),response,Toast.LENGTH_SHORT).show();
                         String fname = jsonResponse.getJSONObject(0).getString("fname");

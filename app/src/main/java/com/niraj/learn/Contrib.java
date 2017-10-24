@@ -66,7 +66,7 @@ public class Contrib extends AppCompatActivity {
             @Override
             public void onResponse(String response) {
                 try {
-                    Toast.makeText(Contrib.this, response, Toast.LENGTH_LONG).show();
+                    //Toast.makeText(Contrib.this, response, Toast.LENGTH_LONG).show();
                     JSONObject jsonResponse = new JSONObject(response);
                     boolean success = jsonResponse.getBoolean("success");
 
@@ -94,6 +94,8 @@ public class Contrib extends AppCompatActivity {
             BookRequest bookRequest = new BookRequest(subject_str,bookname_str,author_str,publisher_str,edition_str,link_str,user,responseListener);
             RequestQueue queue = Volley.newRequestQueue(Contrib.this);
             queue.add(bookRequest);
+            Toast.makeText(getApplicationContext(),"Book Added Succesfully",Toast.LENGTH_SHORT).show();
+
         }
         else
         {

@@ -38,7 +38,7 @@ public class SubjectList extends AppCompatActivity {
         subject=getIntent().getStringExtra("subject");
         username=getIntent().getStringExtra("username");
 
-        Toast.makeText(getApplicationContext(),subject,Toast.LENGTH_SHORT).show();
+        //Toast.makeText(getApplicationContext(),subject,Toast.LENGTH_SHORT).show();
 
         list =generateData();
         // 1. pass context and data to the custom adapter
@@ -62,7 +62,7 @@ public class SubjectList extends AppCompatActivity {
                     @Override
                     public void onItemClick(AdapterView<?> adapterView, android.view.View view, int i, long l) {
                         BookModel clickedobj = adapter.getItem(i);
-                        Toast.makeText(getApplicationContext(),"you have clicked"+clickedobj.getId()+"", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(getApplicationContext(),"you have clicked"+clickedobj.getId()+"", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(getApplicationContext(),BookDisplay.class);
                         intent.putExtra("obj",clickedobj);
                         intent.putExtra("username",username);

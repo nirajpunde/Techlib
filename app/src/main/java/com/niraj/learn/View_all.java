@@ -49,7 +49,7 @@ public class View_all extends AppCompatActivity {
                     @Override
                     public void onItemClick(AdapterView<?> adapterView, android.view.View view, int i, long l) {
                         BookModel clickedobj = adapter.getItem(i);
-                        Toast.makeText(View_all.this,"you have clicked"+clickedobj.getBookname(), Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(View_all.this,"you have clicked"+clickedobj.getBookname(), Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(View_all.this,BookDisplay.class);
                         intent.putExtra("obj",clickedobj);
                         startActivity(intent);
@@ -74,7 +74,7 @@ public class View_all extends AppCompatActivity {
                     //Toast.makeText(getApplicationContext(),response,Toast.LENGTH_LONG).show();
                     JSONArray jsonResponse = new JSONArray(response);
                     int lenght = jsonResponse.length();
-                    Toast.makeText(getApplicationContext(), "" + lenght, Toast.LENGTH_LONG).show();
+                    //Toast.makeText(getApplicationContext(), "" + lenght, Toast.LENGTH_LONG).show();
 
                     if (jsonResponse.length() > 0) {
                         for (int i = 0; i < jsonResponse.length(); i++) {

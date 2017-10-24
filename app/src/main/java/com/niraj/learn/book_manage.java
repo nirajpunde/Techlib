@@ -1,6 +1,7 @@
 package com.niraj.learn;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -27,6 +28,7 @@ public class book_manage extends AppCompatActivity {
     BookModel book;
     Integer id;
     String username;
+    String link;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +41,7 @@ public class book_manage extends AppCompatActivity {
         TextView tvedition = (TextView)findViewById(R.id.edition);
         TextView tvauthor = (TextView)findViewById(R.id.author);
         TextView tvcontributer = (TextView)findViewById(R.id.contributer);
+        TextView tvlink = (TextView)findViewById(R.id.link);
 
 
         book = (BookModel) getIntent().getSerializableExtra("obj");
@@ -50,7 +53,9 @@ public class book_manage extends AppCompatActivity {
         tvedition.setText(book.getEdition());
         tvpublisher.setText(book.getPublisher());
         tvcontributer.setText(book.getContributer());
+        tvlink.setText(book.getLink());
 
+        link=book.getLink();
         id=book.getId();
 
 
@@ -93,6 +98,18 @@ public class book_manage extends AppCompatActivity {
 
 
 
+
+    }
+    public void download_book(View v)
+    {
+        try{
+            Intent i = new Intent(Intent.ACTION_VIEW , Uri.parse(link));
+            startActivity(i);
+        }catch (Exception e)
+        {
+            e.printStackTrace();
+            Toast.makeText(getApplicationContext(),"Invalid Link",Toast.LENGTH_SHORT).show();
+        }
 
     }
 }

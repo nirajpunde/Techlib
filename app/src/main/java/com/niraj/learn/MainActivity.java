@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onResponse(String response) {
                 try {
-                    Toast.makeText(getApplicationContext(),response,Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(getApplicationContext(),response,Toast.LENGTH_SHORT).show();
                     JSONObject jsonResponse = new JSONObject(response);
                     boolean success = jsonResponse.getBoolean("success");
                     if (success) {
