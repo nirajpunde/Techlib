@@ -35,12 +35,12 @@ public class BookDisplay extends AppCompatActivity {
 
         book = (BookModel) getIntent().getSerializableExtra("obj");
 
-        tvbookname.setText(book.getBookname());
-        tvsubject.setText(book.getSubject());
-        tvauthor.setText(book.getAuthor());
-        tvedition.setText(book.getEdition());
-        tvpublisher.setText(book.getPublisher());
-        tvcontributer.setText(book.getContributer());
+        tvbookname.setText("Book Name:"+book.getBookname());
+        tvsubject.setText("Subject:"+book.getSubject());
+        tvauthor.setText("Author:"+book.getAuthor());
+        tvedition.setText("Edition:"+book.getEdition());
+        tvpublisher.setText("Publisher:"+book.getPublisher());
+        tvcontributer.setText("Contributer:"+book.getContributer());
 
         link=book.getLink();
 
