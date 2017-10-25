@@ -81,10 +81,10 @@ public class SubjectList extends AppCompatActivity {
             @Override
             public void onResponse(String response) {
                 try {
-                    Toast.makeText(getApplicationContext(),response,Toast.LENGTH_LONG).show();
+                    //Toast.makeText(getApplicationContext(),response,Toast.LENGTH_LONG).show();
                     JSONArray jsonResponse = new JSONArray(response);
                     int lenght = jsonResponse.length();
-                    Toast.makeText(getApplicationContext(), "" + lenght, Toast.LENGTH_LONG).show();
+                    //Toast.makeText(getApplicationContext(), "" + lenght, Toast.LENGTH_LONG).show();
 
                     if (jsonResponse.length() > 0) {
                         for (int i = 0; i < jsonResponse.length(); i++) {
@@ -111,7 +111,7 @@ public class SubjectList extends AppCompatActivity {
 //                                .setNegativeButton("Retry", null)
 //                                .create()
 //                                .show();
-                        Toast.makeText(getApplicationContext(),"Error Occured",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(),"List Empty ",Toast.LENGTH_SHORT).show();
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();

@@ -33,7 +33,7 @@ public class list_of_sub extends AppCompatActivity {
     public void softengg(View v)
     {
         Intent intent = new Intent(getApplicationContext(),SubjectList.class);
-        intent.putExtra("subject","softengg");
+        intent.putExtra("subject","sepm");
         startActivity(intent);
     }
     public void networks(View v)

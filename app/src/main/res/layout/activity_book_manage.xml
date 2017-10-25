@@ -5,70 +5,94 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/elib4"
     tools:context="com.niraj.learn.book_manage">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/bookname"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="bookname"
-        android:textSize="30sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/subject"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="subject"
-        android:textSize="30sp" />
+            <TextView
+                android:id="@+id/bookname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="bookname"
+                android:textSize="30sp"
+                android:textColor="@android:color/white"
+                android:paddingTop="10dp"/>
 
-    <TextView
-        android:id="@+id/publisher"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="publisher"
-        android:textSize="30sp" />
-    <TextView
-        android:id="@+id/author"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="author"
-        android:textSize="30sp" />
+            <TextView
+                android:id="@+id/subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="subject"
+                android:textSize="30sp"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="15dp"/>
 
-    <TextView
-        android:id="@+id/edition"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="edition"
-        android:textSize="30sp" />
+            <TextView
+                android:id="@+id/publisher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="publisher"
+                android:textSize="30sp"
+                android:layout_marginTop="25dp"
+                android:textColor="@android:color/white"/>
+            <TextView
+                android:id="@+id/author"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="author"
+                android:textSize="30sp"
+                android:layout_marginTop="25dp"
+                android:textColor="@android:color/white"/>
 
-    <TextView
-        android:id="@+id/contributer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="contributer"
-        android:textSize="30sp" />
+            <TextView
+                android:id="@+id/edition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="edition"
+                android:textSize="30sp"
+                android:layout_marginTop="25dp"
+                android:textColor="@android:color/white"/>
 
-    <TextView
-        android:id="@+id/link"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="link"
-        android:onClick="download_book"
-        android:textColor="@android:color/holo_blue_dark"
-        android:textSize="30sp" />
+            <TextView
+                android:id="@+id/contributer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="contributer"
+                android:textSize="30sp"
+                android:layout_marginTop="25dp"
+                android:textColor="@android:color/white"/>
 
-    <Button
-        android:id="@+id/delete"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="delete_book"
-        android:text="delete" />
+            <TextView
+                android:id="@+id/link"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="link"
+                android:onClick="download_book"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="30sp"
+                android:layout_marginTop="25dp"
+                />
+
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="delete_book"
+                android:text="delete"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:textColor="@android:color/holo_blue_dark"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+
 
 </LinearLayout>

@@ -47,13 +47,13 @@ public class book_manage extends AppCompatActivity {
         book = (BookModel) getIntent().getSerializableExtra("obj");
         username=getIntent().getStringExtra("username");
 
-        tvbookname.setText(book.getBookname());
-        tvsubject.setText(book.getSubject());
-        tvauthor.setText(book.getAuthor());
-        tvedition.setText(book.getEdition());
-        tvpublisher.setText(book.getPublisher());
-        tvcontributer.setText(book.getContributer());
-        tvlink.setText(book.getLink());
+        tvbookname.setText("Book Name:"+book.getBookname());
+        tvsubject.setText("Subject:"+book.getSubject());
+        tvauthor.setText("Author:"+book.getAuthor());
+        tvedition.setText("Edition:"+book.getEdition());
+        tvpublisher.setText("Publisher:"+book.getPublisher());
+        tvcontributer.setText("Contributor:"+book.getContributer());
+        tvlink.setText("Link:"+book.getLink());
 
         link=book.getLink();
         id=book.getId();

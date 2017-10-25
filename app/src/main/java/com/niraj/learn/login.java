@@ -62,6 +62,7 @@ public class login extends AppCompatActivity {
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();
+                    Toast.makeText(getApplicationContext(),"OOPS!! Wrong credentials",Toast.LENGTH_SHORT).show();
                 }
             }
         };

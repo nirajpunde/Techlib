@@ -19,7 +19,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".login" />
-        <activity android:name=".booklist" />
         <activity android:name=".user_area" />
         <activity android:name=".Contrib" />
         <activity android:name=".View_all" />
