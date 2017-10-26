@@ -55,7 +55,7 @@ public class user_contri extends AppCompatActivity {
                     @Override
                     public void onItemClick(AdapterView<?> adapterView, android.view.View view, int i, long l) {
                         BookModel clickedobj = adapter.getItem(i);
-                        Toast.makeText(getApplicationContext(),"you have clicked"+clickedobj.getId()+"", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(getApplicationContext(),"you have clicked"+clickedobj.getId()+"", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(getApplicationContext(),book_manage.class);
                         intent.putExtra("obj",clickedobj);
                         intent.putExtra("username",username);

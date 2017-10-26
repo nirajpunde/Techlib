@@ -8,67 +8,80 @@
     android:background="@drawable/elib4"
     tools:context="com.niraj.learn.BookDisplay">
 
-    <TextView
-        android:id="@+id/bookname"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="bookname"
-        android:textColor="@android:color/white"
-        android:textSize="30sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/bookname"
 
-    <TextView
-        android:id="@+id/subject"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="subject"
-        android:textSize="30sp"
-        android:textColor="@android:color/white"/>
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="bookname"
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
 
-    <TextView
-        android:id="@+id/publisher"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="publisher"
-        android:textSize="30sp"
-        android:textColor="@android:color/white"/>
-    <TextView
-        android:id="@+id/author"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="author"
-        android:textSize="30sp"
-        android:textColor="@android:color/white"/>
+            <TextView
+                android:id="@+id/subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="subject"
+                android:textSize="30sp"
+                android:textColor="@android:color/white"/>
 
-    <TextView
-        android:id="@+id/edition"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="edition"
-        android:textSize="30sp"
-        android:textColor="@android:color/white"/>
+            <TextView
+                android:id="@+id/publisher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="publisher"
+                android:textSize="30sp"
+                android:textColor="@android:color/white"/>
+            <TextView
+                android:id="@+id/author"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="author"
+                android:textSize="30sp"
+                android:textColor="@android:color/white"/>
 
-    <TextView
-        android:id="@+id/contributer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="contributer"
-        android:textSize="30sp"
-        android:textColor="@android:color/white"/>
+            <TextView
+                android:id="@+id/edition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="edition"
+                android:textSize="30sp"
+                android:textColor="@android:color/white"/>
 
-    <Button
-        android:id="@+id/download"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="download_book"
-        android:text="download"
-        android:layout_marginTop="30dp"
-        android:textColor="@android:color/holo_blue_bright"/>
+            <TextView
+                android:id="@+id/contributer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="contributer"
+                android:textSize="30sp"
+                android:textColor="@android:color/white"/>
+
+            <Button
+                android:id="@+id/download"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="download_book"
+                android:text="download"
+                android:layout_marginTop="30dp"
+                android:textColor="@android:color/holo_blue_bright"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
 
 </LinearLayout>

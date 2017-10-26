@@ -46,7 +46,7 @@ public class Validator {
         {
             return false;
         }
-        if(!(this.link.contains("https://")&&this.link.contains(".")))
+        if(!((this.link.contains("https://")||(this.link.contains("http://")))&&this.link.contains(".")))
         {
             return false;
         }
